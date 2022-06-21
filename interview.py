@@ -1,11 +1,11 @@
-
+"""
 第一轮manager 很常规的bq，还会复数我说的话，进行confirm
 第二轮 project dive，自己在白板说自己现在做的项目，面试官提问题交流，像做presentation
 第三轮 system design，设计calender
 第四轮 壹零壹，秒了之后问我有没有什么没考虑到的，比如input 是只有一条的tree，类似ListNode，太长导致Stack Overflow，问的我云里雾里的，shadow的中国老哥也是一脸疑惑。
  三期三，但不是sum，而是 multiplication，
 第五轮 刘三流，变形了，input 不是 id number， 而是string name，不仅要算exclusion还要算incl‍‍‍‌‌‌‍‍‌‍‌‌‌‌‌‍‍‍usion， inclusion的定义是直接拿endTime - startTime
-第五轮补充，method input（String funcName,List<String>logs）,要求返回对应funcName 的exclusion和inclusion time
+第五轮补充，method input（String funcName, List<String>logs）,要求返回对应funcName 的exclusion和inclusion time
 
 
 1. 第一题是 贰肆叁
@@ -13,6 +13,8 @@
 
 第二题应该是简化版的气流
 # https://www.1point3acres.com/bbs/thread-878851-1-1.html
+"""
+
 """
 public class Solution {
     public void reorderList(ListNode head) {
@@ -53,7 +55,7 @@ public class Solution {
 }
 """
 
-
+"""
 1. Design Calendar
 2. HM BQ
 3. 过去的project
@@ -62,6 +64,8 @@ public class Solution {
 接著连续两个follow up在O(n)解法裡如何减少space和如果tree imbalance如何提前结束, 这轮面试官引导的满好的, 也都回答出来了。
 
 # https://www.1point3acres.com/bbs/thread-878361-1-1.html
+
+"""
 
 """
 word shortest distance
@@ -199,12 +203,13 @@ public class Solution {
 }
 """
 
-
+"""
 3.
 只问了一道题，最大栈。是tag高频。
 我先说了普通解法。（2个stack）然后说还有更高效的解法，他说先实现简单的吧。 然后就实现了一下。
 讨论完时间空间复杂度以后，他reviwe了一下 没有bug。但是没编译或者跑test。
-然后我说还可以用treemap和double linkedlist。然后分享了一下思路，口述每一个function怎么实现，时间空间复杂度是什么，如何从treemap里找到list n‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌ode，如何删除或者增加node，之类之类。全程问的非常非常细节。
+然后我说还可以用treemap和double linkedlist。然后分享了一下思路，口述每一个function怎么实现，
+时间空间复杂度是什么，如何从treemap里找到list n‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌ode，如何删除或者增加node，之类之类。全程问的非常非常细节。
 聊完了以后他说非常好非常好，不用担心任何事。
 不过暂时recruiter还没给feedback，希望能过。
 
@@ -314,7 +319,8 @@ RetainBestCache
 
 12.
 5分钟introduction开始出题了  面试官问了thread VS process啥区别？
-问了合理三角形这道题  首先问的是返回任意一个三角形咋办 确实没见过这题目 给了个二分的解法说时间复杂度不合格  面试官给了些提示 想出来个O(n)解法, 
+问了合理三角形这道题  首先问的是返回任意一个三角形咋办 确实没见过这题目 
+给了个二分的解法说时间复杂度不合格  面试官给了些提示 想出来个O(n)解法, 
 然后写代码很容易就写出bug free。
 然后一个followup 就是和力扣一样的题目(六妖妖) 想了半天没想出来 后来提示想出来了 但是面试时间已经耗完。最‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌后留时间问了个问题 飘过了。
 
@@ -322,8 +328,12 @@ RetainBestCache
 
 
 13.
-小三哥看着很和蔼，但是出题很血腥，一上来就出了一个Valid Number, 利口柳屋。雾草店面就上hard，我都没做过这题，上来给我整蒙了，不一样的是没有那个optional的条件就是e/E的那个，其他都是一样的，“."这个Corner case第一次没有注意到，经提醒之后改正。
-然后第二题利口流气药，有一个不一样的是，他特地强调了leaf node 的value是unique的，原题没有这个，感觉这个条件没有什么用啊，可能就是guarantee有一个解？
+小三哥看着很和蔼，但是出题很血腥，一上来就出了一个Valid Number, 利口柳屋。雾草店面就上hard，我都没做过这题，上来给我整蒙了，
+不一样的是没有那个optional的条件就是e/E的那个，其他都是一样的，
+“."这个Corner case第一次没有注意到，经提醒之后改正。
+
+然后第二题利口流气药，有一个不一样的是，他特地强调了leaf node 的value是unique的，
+原题没有这个，感觉这个条件没有什么用啊，可能就是guarantee有一个解？
  我写出来了，而且口头跑了一遍，但是解题的时候思路比较乱，讲的‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌不是很清楚，不知道小哥给不给过。
 综合的来说就是如果你很想去这家，就刷tag题就完事儿了，tag题频率低的也要刷。哎，反正感觉不太好，算了，move on吧。
 # https://www.1point3acres.com/bbs/thread-872726-1-1.html
@@ -333,16 +343,23 @@ RetainBestCache
 第一轮算法：
 里扣 溜旧 （+ follow up）
          而无溜
-第二轮 讲自己组做过的项目： 遇到一位人很好的国人大哥，在这里道声谢，全程都很好，而且我当时说了很真实关于我想离开现在这个组的原因（后来想起来感觉是给自己挖了坑，如果要是遇到一些隔壁邻居的面试官，我感觉我会gg），面完之后，
+第二轮 讲自己组做过的项目： 遇到一位人很好的国人大哥，在这里道声谢，全程都很好，
+而且我当时说了很真实关于我想离开现在这个组的原因（后来想起来感觉是给自己挖了坑，如果要是遇到一些隔壁邻居的面试官，我感觉我会gg），面完之后，
 大哥还和我分享了很多他的工作经历，这一轮我觉得自己稍微准备一下，能够清晰的表达交流应该是没什么太大的问题。
 第二天：
-第一轮 系统设计： Top K （是常考题）推荐大家可以去油管搜搜视频，大概了解一下。这个top k 我看到地里很多人都被问过，但是感觉要看面试官想主要考你哪个点，会问的稍微细。（我这一轮是两个面试官，有一个shadow的小姐姐，小姐姐人很好，一直都微笑在听我，其实我觉得我这轮有些紧张。）
+第一轮 系统设计： Top K （是常考题）推荐大家可以去油管搜搜视频，大概了解一下。
+这个top k 我看到地里很多人都被问过，但是感觉要看面试官想主要考你哪个点，会问的稍微细。
+（我这一轮是两个面试官，有一个shadow的小姐姐，小姐姐人很好，一直都微笑在听我，其实我觉得我这轮有些紧张。）
 第二轮算法：
-里扣 儿物寺 （这一轮面试官小姐姐要share screen，虽然但是有点紧张，但是题目不算难，所以过程还是比较顺利。最后小姐姐还鼓励我对我说希望你之后可以加入领英）。
+里扣 儿物寺 （这一轮面试官小姐姐要share screen，虽然但是有点紧张，
+但是题目不算难，所以过程还是比较顺利。最后小姐姐还鼓励我对我说希望你之后可以加入领英）。
 # https://www.1point3acres.com/bbs/thread-871537-1-1.html
 
 15.
-第一轮design topk，设计很简单估计大家都会，面试官可能有不同的侧重点，这个面试官没有说我们k可以任意取值，时间上也只取过去5分钟，1小时和1天，但是要求达到99%的精确度（一般的我们可能认为fastpath那个不需要很精确，但这里不行），然后一直在问要在什么粒度上aggregate，这轮感觉答的一般，但也不是很差
+第一轮design topk，设计很简单估计大家都会，面试官可能有不同的侧重点，
+这个面试官没有说我们k可以任意取值，时间上也只取过去5分钟，1小时和1天，
+但是要求达到99%的精确度（一般的我们可能认为fastpath那个不需要很精确，但这里不行），
+然后一直在问要在什么粒度上aggregate，这轮感觉答的一般，但也不是很差
 第二轮
 design metrics system，和上一轮结构有相似之处，把 metrics的schama设计明白就好了，high level结构和上一轮类似
 第三轮
@@ -351,12 +368,14 @@ design metrics system，和上一轮结构有相似之处，把 metrics的schama
 craftmanship，主要是behavior第五轮
 本以为上午两轮design完了，答的还凑合，应该稳了，结果这一轮又问了个底层的design，要做的差不多类似于一个存储，
 有一个producer不断的往这个存储里写东西，有多个consumer不断在这个里面读取东西，然后这个存储超过多少GB之后，
-就要把老的东西给删掉，然后要我来design这个存储，本以为是用LRU多线程那种解决，结果告知我不是要问这个，整个面试过程就在问我底层memory里各个byte，
+就要把老的东西给删掉，然后要我来design这个存储，本以为是用LRU多线程那种解决，
+结果告知我不是要问这个，整个面试过程就在问我底层memory里各个byte，
 各个地址要存什么东西，果然是很infra的题，在面试过程中完全不会，一边试着答，一边不断的跟面试官说我真的没做过这么底层的东西，
 有可能是这个面试官给了我一个fail，但是提出来可能只是我的技能不适合infra而已
 第六轮
 coding ,merge n sorted list， follow up是如果有五千万个list，怎么用多线程解决，这个‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌follow up感觉答的一般，
-因为每一步都要一个线程的话相当于第一步就得两千五百万的线程，这个感觉太多了，然后他问我那我觉得多少个线程是合理的，我也没有概念，
+因为每一步都要一个线程的话相当于第一步就得两千五百万的线程，这个感觉太多了，
+然后他问我那我觉得多少个线程是合理的，我也没有概念，
 我说大概10000个吧，然后就是第一轮先用10000个线程合并，他不置可否，这一轮不太清楚怎么样
 # https://www.1point3acres.com/bbs/thread-871413-1-1.html
 
@@ -410,7 +429,8 @@ Craftsmanship:
 19.
 给一个integer的数组（有正有负，可以有重复）和一个k， 问能不能找出k个subset使每个subset的sum都一样，array里的每个数都要用上且不能重复使用。 
 只需要返回true/false。
-当时想的是先求出整个array的sum，sum/k = subSum, 相当于问能不能找出k个subset，每个subset的和都是subsum。‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌最后写brute force给自己写晕了。。
+当时想的是先求出整个array的sum，sum/k = subSum, 相当于问能不能找出k个subset，
+每个subset的和都是subsum。‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌最后写brute force给自己写晕了。。
 举个例子 array=[2,10,6,-2,8] k=3 返回true  [2,6] [10,-2] [8]
 
 
@@ -421,7 +441,9 @@ https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
 11.
 算法题目不难，都是原题，三吧凌，三吧幺，二期二，尔物流
 
-design就更离谱了，是linkedin自己的service，是非常具体的那种的要求和需求，不像其他的design，你可以按自己的方式来进行，他直接从他要的方向开始问，而且很明显他已经有自己的答案了，除非你按他的说，不然很容易被question，因为你确实没有他了解那个系统，整个过程也很让人不适，态度很差，爱答不理的，这轮应该是no hire。
+design就更离谱了，是linkedin自己的service，是非常具体的那种的要求和需求，
+不像其他的design，你可以按自己的方式来进行，他直接从他要的方向开始问，而且很明显他已经有自己的答案了，
+除非你按他的说，不然很容易被question，因为你确实没有他了解那个系统，整个过程也很让人不适，态度很差，爱答不理的，这轮应该是no hire。
 # https://www.1point3acres.com/bbs/thread-869511-1-1.html
 
 
@@ -459,7 +481,8 @@ Leetcode concurrency section好好写一写，不过貌似现场不需要compile
 3. 吃饭轮。
 4. coding  李扣撕伊柳， 而伞舞
 5. HR bq
-6.Data Structure. 给一个时间windows，然后写get add getAvg(), get的时候element 如果过期了，返回null. 重点讨论怎么处理过期的数据，在哪里进行删除，后来延伸到多线程境况下怎么处理。答的不好，磕磕巴巴，一到多线程也啥也不‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌会。
+6.Data Structure. 给一个时间windows，然后写get add getAvg(), get的时候element 如果过期了，
+返回null. 重点讨论怎么处理过期的数据，在哪里进行删除，后来延伸到多线程境况下怎么处理。答的不好，磕磕巴巴，一到多线程也啥也不‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌会。
 7. coding 李扣而百，而令撕另
 # https://www.1point3acres.com/bbs/thread-868745-1-1.html
 
@@ -472,14 +495,18 @@ Leetcode concurrency section好好写一写，不过貌似现场不需要compile
 
 17.
 系统设计面的top K
-算法面的和这个帖子一样：https://www.1point3acres.com/bbs/thread-843152-1-1.html，没想出最优解，我处理matrix状态的时候面试官也有疑问，最后没有解决分歧。
+算法面的和这个帖子一样：https://www.1point3acres.com/bbs/thread-843152-1-1.html，没想出最优解，
+我处理matrix状态的时候面试官也有疑问，最后没有解决分歧。
 想吐槽的一点是Linkedin的coderpad没办法execute，如果提出了和面试官想法不一样的解法，需要很大的cost去证明。
-我VO面的一轮算法就是这里：https://www.1point3acres.com/bbs/thread-197717-1-1.html 第二题，我算getTotalCoverage用了sort+移动窗口。面试官也是没见过，非说我的方法不能处理duplicate，dry run了两个test case才‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌解决分歧，导致我第二题没时间写完。
+我VO面的一轮算法就是这里：https://www.1point3acres.com/bbs/thread-197717-1-1.html 第二题，
+我算getTotalCoverage用了sort+移动窗口。面试官也是没见过，非说我的方法不能处理duplicate，
+dry run了两个test case才‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌解决分歧，导致我第二题没时间写完。
 
 # https://www.1point3acres.com/bbs/thread-867912-1-1.html
 
 18.
-round 1:  DFS数component个数，有点像数岛，但是自己构建graph; Max stak 用double listnode 做round 2:  和经理聊天，就讲项目和BQ
+round 1:  DFS数component个数，有点像数岛，但是自己构建graph; Max stak 用double listnode 做
+round 2:  和经理聊天，就讲项目和BQ
 round 3: 系统设计，求top k 注意这里的 k 是变量，就是说用户可以拿top 任意个数，所以不同于之前计算top k就不能只计算存储top k。有没有大神说下大概最优方案是啥。我应该答得不好
 round 4: 画图讲自己项目
 round 5: 三姐给了两道hard 而起儿 和 尔旧物 但都常见
@@ -495,29 +522,40 @@ round 5: 三姐给了两道hard 而起儿 和 尔旧物 但都常见
 20.
 上来先SD， malicious ip 那道题，问的还挺细，问到distributed cache, API gateway, consistent hashing等等
 然后resume deep dive, 楼主画图还可以，用zoom drawboard，建议面试前提前熟悉下
-然后面的 all o 1（说实话有点惊讶，这题应该是hard++，楼主一年经验考这么难也是。。不过还好看过面经，这题细节颇多。。。）
+然后面的 all o 1（说实话有点惊讶，这题应该是hard++，楼主一年经验考这么难也是。。
+不过还好看过面经，这题细节颇多。。。）
 休息
 又面的那个paragraph断句的 都是tag里的题，楼主用python，有点尴尬的是用python里 //是整数除法（ex: 5//2 = 2)
-但是面试小哥显然不怎么懂python只会js，问我为什么要在code里加comment....(js里//是comment符号） 解释了一下算是蒙混过关 ：）
+但是面试小哥显然不怎么懂python只会js，问我为什么要在code里加comment....
+(js里//是comment符号） 解释了一下算是蒙混过关 ：）
 
 # https://www.1point3acres.com/bbs/thread-866995-1-1.html
 
 21.
-比如：什么是进程和线程，什么情况下开一个新进程/线程；什么是Mutex和Semaphore，两者区别；什么时候用Mutex什么时候用Semaphore；Final, Finalize和Finally的区别是啥；什么是Virtual Memory。
+比如：什么是进程和线程，什么情况下开一个新进程/线程；
+什么是Mutex和Semaphore，两者区别；什么时候用Mutex什么时候用Semaphore；
+Final, Finalize和Finally的区别是啥；什么是Virtual Memory。
 这些基本系统概念完全没准备，BBQ了。答得一塌糊涂。
-算法题目出得不难，类似蠡口五六，合并区间，只不过给你在一个interfac‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌e，里面有AddInterval()和GetCoverLength()，输出总的覆盖的区间长度，让你去实现。
+算法题目出得不难，类似蠡口五六，合并区间，只不过给你在一个interfac‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌e，
+里面有AddInterval()和GetCoverLength()，输出总的覆盖的区间长度，让你去实现。
 # https://www.1point3acres.com/bbs/thread-866624-1-1.html
 
 
 22.
-1.Nested List Weight Sum 两题中简单的那题 我记得一题是bfs或dfs都行 另外一题最好bfs 否则要用dfs找深度 有很简单的followup
+1.Nested List Weight Sum 两题中简单的那题 我记得一题是bfs或dfs都行 
+另外一题最好bfs 否则要用dfs找深度 有很简单的followup
 2.Pow(x, n) 给了o(n) 然后又给了recursive的O(logn)
 3.Closest Binary Search Tree Value II 直接给two stacks的做法 因为时间复杂度最优 
 但最后面试官说二叉树not neccessarily complete 所以worst case并非O(logn) 
-然后口述了O(n）的做法 我练的时候 是用个deque在inorder traversal的时候 右边界找到后做early termination 告诉了他 
-    另外也提到了直接flatten成ascending order后 先扫一遍找到closest number 再用two pointer/sliding window。蠡口的答案最后一步写的是sort 感觉有点蠢
-4.Intersection of Two Linked Lists 口述了用hashset记录节点 画了个O(n+m) time O(1) space的图后 花了一分钟写好 都是我在drive conversation 面试官事先也没要求O(1) space
-5.序列化和反序列化二叉树 binary tree版本应该比bst版本容易一点 告诉他preorder和bfs都行 但我口误了说了inorder 虽然后来写的还是preorder 后来那哥们followup说为什么preorder不行 他自己的reasoning其实是有问题的
+然后口述了O(n）的做法 我练的时候 是用个deque在inorder traversal的时候 
+右边界找到后做early termination 告诉了他 
+    另外也提到了直接flatten成ascending order后 先扫一遍找到closest number 再用two pointer/sliding window。
+    蠡口的答案最后一步写的是sort 感觉有点蠢
+4.Intersection of Two Linked Lists 口述了用hashset记录节点 画了个O(n+m) time O(1) 
+space的图后 花了一分钟写好 都是我在drive conversation 面试官事先也没要求O(1) space
+5.序列化和反序列化二叉树 binary tree版本应该比bst版本容易一点 告诉他preorder和bfs都行 
+但我口误了说了inorder 虽然后来写的还是preorder 后来那哥们followup说为什么preorder不行 
+他自己的reasoning其实是有问题的
 6.Insert Delete GetRandom O(1) 稍微改了点api的description 没有explicitly说是不是有duplicate 写了无duplicate 然后draft code了有duplicat‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌e
 7.超级高频的一两题system design中的一道 说实话去面的人肯定会去过一遍
 
@@ -549,6 +587,7 @@ Java中叫treemap
 电面介绍自己之后是两道题，一个是leetcode上 Nested list weight sum 那道，我做出来了。
 但是第二道是一道cache设计题， 我以为是类似于leetcode上的cache题，做的跑偏了。
 面完发现它不是, 这是题目是这样的， 网上有答案
+"""
 
 """
 public class RetainBestCache<K, T extends Rankable> {
@@ -583,7 +622,7 @@ public interface DataSource<K, T extends Rankable> {
 T get(K key);
 }
 """
-
+"""
 面试官问了问follow up：
 - What if we want to implment this in multi-threaded environment?
 - What i‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌f the rank will drift with time?
@@ -611,9 +650,13 @@ T get(K key);
 # https://www.1point3acres.com/bbs/thread-862247-1-1.html
 
 31.
-abc男 +三姐: 两道median,abc男给的 儿要母(用quickselect写得其实有点bug,忘了n - k), 三姐给的 三流事(比较有趣的是,写了最优解但abc男不懂觉得是错的,还给解释了一遍,最优解真的不可能自己想出来)
+abc男 +三姐: 两道median,abc男给的 
+儿要母(用quickselect写得其实有点bug,忘了n - k), 
+三姐给的 三流事(比较有趣的是,写了最优解但abc男不懂觉得是错的,还给解释了一遍,最优解真的不可能自己想出来)
 VO:
-1.三姐面+国女shadow(记不清):两道median,一道 散思,用自己的方法写了一遍,用interviewer的方法写了一遍,花了比较多的时间(好像不仅时间复杂度要最优解,连code本身也要最优解).第二道,数岛,要求不用extra space,没时间了飞速秒,三姐写Java看到Python的range(n)在那儿说是不是错了
+1.三姐面+国女shadow(记不清):两道median,一道 散思,用自己的方法写了一遍,
+用interviewer的方法写了一遍,花了比较多的时间(好像不仅时间复杂度要最优解,连code本身也要最优解).
+第二道,数岛,要求不用extra space,没时间了飞速秒,三姐写Java看到Python的range(n)在那儿说是不是错了
 2.扯淡round,一个神神叨叨的phd面工作project,全程伴随着他大量的自言自语
 3.三姐面+国女shadow:SD, top  k,答得有点水
 4.好像是三哥?面,国男shadow:先给 鹅吃梨,再给 鹅企鹅
@@ -736,17 +779,20 @@ HM：硬撑着又各种套例子。。。
 1. 算法：伞吧零 散吧一
 2. 实现Delayed task scheduler
 3. 吃饭 和国人老哥聊的很开心
-4. 算法：儿乞二，面经灭火题。这轮面的比较脑壳疼 第一题我用c++vector做的，遇到距离target更近的元素就去掉vector中头部的元素,O(n) 复杂度。这题都做完了shadow的面试官突然冒出来说vector的erase不是(1)操作所以时间复杂度不对，
+4. 算法：儿乞二，面经灭火题。这轮面的比较脑壳疼 第一题我用c++vector做的，遇到距离target更近的元素就去掉vector中头部的元素,O(n) 复杂度。
+这题都做完了shadow的面试官突然冒出来说vector的erase不是(1)操作所以时间复杂度不对，
 我说换成任何O(1) remove的structure就行，dequeue或者list, 然后我也不知道为啥在c++ vector erase是否是o(1) 操作bb了许久... 
 第二题，  lz在clearify题目的时候问expected output输出是什么，面试官说i dont know, you give me an example let me see. 题目不难，但是最后没写完
 5 SD k-v pair
 6 manager
 一个多星期后recruiter给回电话，说面的那个组决定move on因为我的背景和他们做的东西不fit，不过除了一轮算法feedback一般其它都面的不错他会把我介绍给
+
 app track的recruiter。今天新的recruiter给了电话，现在大致几个选择：
 1. 有一个app组对我感兴趣，需要我加面算法和design，但应该不会给我senior（就因为我差仨月满三年？），risk是如果面的一般overall feedback可能会不好
 2. 继续等，等到有hm愿意直接捞。风险是时间久，久到被recruiter遗忘
 3. 有一个SRE的hm愿意直接捞，如果我有兴趣的话不用加‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌面直接和hm聊，一切顺利的话直接offer
-LZ在蕉厂一路比较波折，最近有点burn out就挺想换个环境。对于SRE这个岗位具体工作内容是完全不了解，如果真的去了去搞一堆完全不懂的东西只怕比现在更累. 想请各路懂行的同志提提建议和看法。
+LZ在蕉厂一路比较波折，最近有点burn out就挺想换个环境。对于SRE这个岗位具体工作内容是完全不了解，
+如果真的去了去搞一堆完全不懂的东西只怕比现在更累. 想请各路懂行的同志提提建议和看法。
 大概率会take risk选1，but最近挂经有点多..
 # https://www.1point3acres.com/bbs/thread-877260-1-1.html
 
@@ -794,7 +840,8 @@ RetainBestCache
          而无溜
 第二轮 讲自己组做过的项目： 遇到一位人很好的国人大哥，在这里道声谢，全程都很好，而且我当时说了很真实关于我想离开现在这个组的原因（后来想起来感觉是给自己挖了坑，如果要是遇到一些隔壁邻居的面试官，我感觉我会gg），面完之后，大哥还和我分享了很多他的工作经历，这一轮我觉得自己稍微准备一下，能够清晰的表达交流应该是没什么太大的问题。
 第二天：
-第一轮 系统设计： Top K （是常考题）推荐大家可以去油管搜搜视频，大概了解一下。这个top k 我看到地里很多人都被问过，但是感觉要看面试官想主要考你哪个点，会问的稍微细。（我这一轮是两个面试官，有一个shadow的小姐姐，小姐姐人很好，一直都微笑在听我，其实我觉得我这轮有些紧张。）
+第一轮 系统设计： Top K （是常考题）推荐大家可以去油管搜搜视频，大概了解一下。这个top k 我看到地里很多人都被问过，
+但是感觉要看面试官想主要考你哪个点，会问的稍微细。（我这一轮是两个面试官，有一个shadow的小姐姐，小姐姐人很好，一直都微笑在听我，其实我觉得我这轮有些紧张。）
 第二轮算法：
 里扣 儿物寺 （这一轮面试官小姐姐要share screen，虽然但是有点紧张，但是题目不算难，所以过程还是比较顺利。最后小姐姐还鼓励我对我说希望你之后可以加入领英）。
 总体感觉，面试官人都很好，没有遇到什么故意被黑被刁难之类的，除了系统设计觉得自己有点紧张，其他感觉都还不错。
@@ -812,7 +859,9 @@ RetainBestCache
 1. 利口 伞伞玖
 2. 利口 伞留寺
 
-第二问的时候我先讲了一下BFS和DFS (two pass)分别怎么做，然后小哥哥让优化DFS。我问是要one pass吗？他说不用，说是存中间量。然后我就想复杂了，我以为是用variable存一些中间结果，结果他的意思就是简单粗暴用hashmap存<level, sum>而已，最后再loop一遍map。小哥哥网络不好，听他说话断断续续的，也导致我后面不是很get到他的意思。anyway，随缘了。
+第二问的时候我先讲了一下BFS和DFS (two pass)分别怎么做，然后小哥哥让优化DFS。我问是要one pass吗？他说不用，说是存中间量。
+然后我就想复杂了，我以为是用variable存一些中间结果，结果他的意思就是简单粗暴用hashmap存<level, sum>而已，
+最后再loop一遍map。小哥哥网络不好，听他说话断断续续的，也导致我后面不是很get到他的意思。anyway，随缘了。
 # https://www.1point3acres.com/bbs/thread-857940-1-1.html
 
 
@@ -854,7 +903,9 @@ lc 尔丝丝
 
 
 57.
-第三轮是系统设计第二轮 找朋友的的degree写代码。给你一个function，两个input，你自己的id和另外一个user的id。然后在给一个api，find(id）然后返给你一个list of friends. 要求找到degree3以内的，超过就算3.
+第三轮是系统设计第二轮 找朋友的的degree写代码。给你一个function，两个input，
+你自己的id和另外一个user的id。然后在给一个api，find(id）然后返给你一个list of friends. 
+要求找到degree3以内的，超过就算3.
 解法，先看看第一个人的好友列表有没有另外一个人，如果没有就看双向拿好友list看看有没有重合。
 迅速写完之后开始画图设计这个，怎么样scale，怎么样的数据库巴拉巴拉。
 第三轮是系统设计第三轮，设计kv store。
@@ -868,12 +919,21 @@ lc 尔丝丝
 # https://www.1point3acres.com/bbs/thread-856085-1-1.html
 
 60.
-Host Manager轮：国人manager，GG六年，跳过来L养老，正常BQ，介绍team，给了一个情景题：有个老的service很多bug，performance也不好，developer experience也很差，请问怎么修，etc。
-Tech Communication: 国人staff面的，介绍自己的project，介绍明白了，但可能tech stack真的差的有点多，没有产生共鸣，国人大哥挠了挠头，事后还看了我linkedin两次，想加他可是没通过，GG。
-System Design: 一个土耳其的白人小姐姐面的，她刚转成manager，感觉她背景就是很简单的web dev，没啥system design的背景，所以面的很水，问的是malicious ip那题，follow up我按面筋答没啥问题，提到了bloom filter她也不知道是什么，我解释了一遍，她象征性的问了问怎么scale，我也简单答了一下，她可能确实不会distributed system，就记了记我说的，拍了张照我的design就草草结束。。
+Host Manager轮：国人manager，GG六年，跳过来L养老，正常BQ，介绍team，
+给了一个情景题：有个老的service很多bug，performance也不好，developer experience也很差，请问怎么修，etc。
+Tech Communication: 国人staff面的，介绍自己的project，介绍明白了，
+但可能tech stack真的差的有点多，没有产生共鸣，国人大哥挠了挠头，
+事后还看了我linkedin两次，想加他可是没通过，GG。
+System Design: 一个土耳其的白人小姐姐面的，她刚转成manager，
+感觉她背景就是很简单的web dev，没啥system design的背景，所以面的很水，
+问的是malicious ip那题，follow up我按面筋答没啥问题，提到了bloom filter她也不知道是什么，
+我解释了一遍，她象征性的问了问怎么scale，我也简单答了一下，她可能确实不会distributed system，
+就记了记我说的，拍了张照我的design就草草结束。。
 
 Conding 1：国人大哥放水的题 伞巴陵 follow up 伞巴以
-Coding 2：邻居大哥的难题 Find All Palindrome Subsequences，这真是挂人题，我一直在往dp的O(n^2)的解法想，事后搜了一下发现最优解是O(n^3)，想了一小时都没做出来，可能也是自己太菜了把。最优解请看这里：https://leetcode.com/disc‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌uss/int ... dromic-Subsequences
+Coding 2：邻居大哥的难题 Find All Palindrome Subsequences，这真是挂人题，
+我一直在往dp的O(n^2)的解法想，事后搜了一下发现最优解是O(n^3)，想了一小时都没做出来，
+可能也是自己太菜了把。最优解请看这里：https://leetcode.com/disc‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌uss/int ... dromic-Subsequences
 
 # https://www.1point3acres.com/bbs/thread-855036-1-1.html
 
@@ -888,12 +948,22 @@ LZ在准备infra 面试，Concurrency方面的有三轮 concurrency，data&algor
 # https://www.1point3acres.com/bbs/thread-854341-1-1.html
 
 62.
-第一轮序列反序列儿茶树。秒了测了半天，最后问我bst怎么优化没想出来，结果竟然是按谦虚遍历可以省去分隔符。体验还不错
+第一轮序列反序列儿茶树。秒了测了半天，最后问我bst怎么优化没想出来，
+结果竟然是按谦虚遍历可以省去分隔符。体验还不错
 第二轮国人hm bq. 人不错感觉水平很高，是我面试以来唯一一个问我的project问题问到点儿上的。
-第三轮设计日历，api和data model还没过完就被烙印追问workflow和design细节了大半个小时，搞的最后没时间画出High level design。可能这里就挂了。系统设计真的是千人千面，以后干脆问完requirement直接画high level design
+第三轮设计日历，api和data model还没过完就被烙印追问workflow和design细节了大半个小时，
+搞的最后没时间画出High level design。可能这里就挂了。
+系统设计真的是千人千面，以后干脆问完requirement直接画high level design
 第四轮题库两题, 一个easy太简单忘了另一个高频萨溜溜
-第五轮tele comm彻底破防。一个白大爷，像国内某些面试官一样全程diss，比如你讲了一通design 从无到有各种trade off最后决定用到了某种aws service，
-他总结就一句：所以你做的just some configure是吗。中间不断带跑话题到稀奇古怪的地方 (比如亚麻不像ebay那样是第三方卖家直接卖东西?)。还在讲话过程中突然偏头看向一边走神几十秒，我不得不停下问他是有什么事？回曰老婆出门了，他在想老婆为什么出门没告诉他原因。。。。 总之我后面忍无可忍，顶了几句草草结束了，手里不是没其他offer非得受这个气。最后问题问最喜欢公司的什么，老汉答曰公司文化好，不‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌干活就做做build and release, 五十多岁就等退休了，反正不会开除他。
+第五轮tele comm彻底破防。一个白大爷，像国内某些面试官一样全程diss，
+比如你讲了一通design 从无到有各种trade off最后决定用到了某种aws service，
+他总结就一句：所以你做的just some configure是吗。
+中间不断带跑话题到稀奇古怪的地方 (比如亚麻不像ebay那样是第三方卖家直接卖东西?)。
+还在讲话过程中突然偏头看向一边走神几十秒，我不得不停下问他是有什么事？
+回曰老婆出门了，他在想老婆为什么出门没告诉他原因。。。。 
+总之我后面忍无可忍，顶了几句草草结束了，手里不是没其他offer非得受这个气。
+最后问题问最喜欢公司的什么，老汉答曰公司文化好，不‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌干活就做做build and release, 
+五十多岁就等退休了，反正不会开除他。
 round1: 省去分隔符 -> 省去null
 
 # https://www.1point3acres.com/bbs/thread-854334-1-1.html
@@ -908,13 +978,19 @@ coding:
 这一轮的面试官感觉不是很上心， 两道题做完了就直接提前挂电话了
 第二轮;
 LC 730
-本人水平有限 system design 完全bomb了， coding第二轮没想过遇到个lc hard 之前没做过 最后写了个递归的解法 follow up 1 ; 怎么把solution 变成iterator 就是 call 一次 然后给出下一个 palindrome， 没答出来， follow up 2: 怎么优化递归解法的space ， 这应该是提示要dp或者memo， 没答出来
+本人水平有限 system design 完全bomb了，
+ coding第二轮没想过遇到个lc hard 之前没做过 
+ 最后写了个递归的解法 follow up 1 ; 
+ 怎么把solution 变成iterator 就是 call 一次 然后给出下一个 palindrome， 
+ 没答出来， follow up 2: 怎么优化递归解法的space ， 这应该是提示要dp或者memo， 没答出来
 bq 问的也比较仔细 建议熟悉一下简历 和‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌挑一个自己能熟练介绍的project
 
 # https://www.1point3acres.com/bbs/thread-853765-1-1.html
 
 64.
-电面：Question1: O(1) 实现 valid parenthese； Question2: 给一串string 的list，input是两个string，找两个string之间index的最小距离（string有可能重复出现）
+电面：
+Question1: O(1) 实现 valid parenthese； 
+Question2: 给一串string 的list，input是两个string，找两个string之间index的最小距离（string有可能重复出现）
 VO：
 Round1：Project deep dive， bq
 Round2:  Design google books
@@ -1023,16 +1099,29 @@ protected byte[] buffer = new byte[BLOCK_COUNT * BLOCK_SIZE];
 
 71.
 第一轮：
-系统设计。Top K Shared Links，实时统计linkedin被转发次数最多的links，类似于twitter trends，要求统计每5min，30min，1day的前20条links。这就就按youtube有个视频答的，分fast path，slow path统计。fast path用count min损失一些精确度来快速产生短时间段的统计数据，slow path就用常规MapReduce。
+系统设计。Top K Shared Links，实时统计linkedin被转发次数最多的links，
+类似于twitter trends，要求统计每5min，30min，1day的前20条links。
+这就就按youtube有个视频答的，分fast path，slow path统计。
+fast path用count min损失一些精确度来快速产生短时间段的统计数据，slow path就用常规MapReduce。
 第二轮：
-LC舞，不知道为啥阿三小姐姐一开始还问我能不能用trietree做这道题，对extendString那种beat90%的解法一开始不是很满意，虽然最后我还是按extend那种写了。
+LC舞，不知道为啥阿三小姐姐一开始还问我能不能用trietree做这道题，
+对extendString那种beat90%的解法一开始不是很满意，虽然最后我还是按extend那种写了。
 LC起要留 原题。
 第三轮：
-tech arch轮，领英独有的画自已过去一个project的架构图讲给面试官听。这个还是提前准备下好。
+tech arch轮，领英独有的画自已过去一个project的架构图讲给面试官听。
+这个还是提前准备下好。
 第四轮：
-insert intervals变形，设计一个Intervals class，要求支持addInterval(int from, int to)和getTotalLengh()，总长度是intervals merged之后的长度。我面试时候是用list存没交集的intervals，每次update‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌有交集的部分。面试官其实有问我有没有更优的，
-其实可以用treemap存<start, end>的pair，key是start，value是end，反正存的是没有交集的intervals。
-followup是再实现一个removeRange(from, to)的api，反正就是现存的range如果和from，to有overlap，那就把overlap的那部分interval删掉（一个interval如果只overlap一半，那就只remove那一半）。
+insert intervals变形，设计一个Intervals class，
+要求支持addInterval(int from, int to)和getTotalLengh()，
+总长度是intervals merged之后的长度。
+我面试时候是用list存没交集的intervals，
+每次update‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌有交集的部分。面试官其实有问我有没有更优的，
+其实可以用treemap存<start, end>的pair，key是start，value是end，
+反正存的是没有交集的intervals。
+followup是再实现一个removeRange(from, to)的api，
+反正就是现存的range如果和from，to有overlap，
+那就把overlap的那部分interval删掉
+（一个interval如果只overlap一半，那就只remove那一半）。
 第五轮：
 纯和HM聊天，问BQ。
 
@@ -1061,7 +1150,11 @@ coding就是面经题目，算一个netsted的list的weighted sum要求的是rev
 
 75.
 1: BQ，白人小姐姐EM，白人小哥SEM影子。两位EM都很nice，聊得也很开心，因为LZ工作年限很长，所以有不少故事可以分享。总体感觉很好。
-2: 台湾小哥。先出了一道149，花了一点时间完成了，然后就聊了一会，后来小哥在44分以后说，我再出一题，汗，只能再做一题，但是可能是时间太紧张了，后面一题没做出来。我一开始的方法应该是对的，使用backtracking，小哥估计看见我没做出来也急了，拼命给hit，然后我最后时刻，把backtracking又改掉了，然后就不对了。小哥后面和我说，那个backtracking的思路是对的，就差一点点了。
+2: 台湾小哥。先出了一道149，花了一点时间完成了，然后就聊了一会，后来小哥在44分以后说，
+我再出一题，汗，只能再做一题，但是可能是时间太紧张了，后面一题没做出来。
+我一开始的方法应该是对的，使用backtracking，小哥估计看见我没做出来也急了，
+拼命给hit，然后我最后时刻，把backtracking又改掉了，然后就不对了。小哥后面和我说，那个backtracking的思路是对的，就差一点点了。
+
 小哥还说，我也许不应该出第二题。事后我再看这题，也就是20分钟就做出来了。另外第二题不是做题网的题目。
 3:白人老哥。设计一个feed的系统。LZ之在之前公司参与过很多个APP的系统设计，所以这一轮应该表现得很好。
 4:国人小哥。本来以为是做题，后来发现是写一个小APP。刚开始LZ觉得这个不是很困难，绝对可以完成，结果实际一做，
@@ -1122,14 +1215,16 @@ blue         2         100        1
 用一个length是3的vector存每个蛋糕当前颜色下的min cost。这应该是DP把？
 Follow-up：
 如果第一个cake 和最后一个蛋糕的颜色也要求不一样。我说那就存3x3的matrix记录第一个蛋糕不同的颜色。
-3 - manager round
+3 - manager round   
 一个小姐姐，问了项目，问了如果最近组里刚刚做完一个big migration，service load time increase让我修bug需要什么资源要怎么修。
 （我答的应该不是很好，第一次面这种面试有点没有经验。面试官很nice很professional就是有一点点不好聊天让人有点紧张）
 4 - system design
 设计一个calendar like google calender 这轮是体验最好的一轮，面试官很nice有问必答，沟通也很顺畅。
 5 - Technical Communication
 讲一个自己参与的项目，让他听懂。从high-level design，问到了具体怎么存data大致的格式，有什么主要的endpoint。画了client server database的图。体验一般‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌般，到后面有种被逼问的感觉。
-All in all，体验特别特别一般。特别是second round，我觉得哪怕我一点都不准备让我去面试别人也不会像那个小哥哥一样糟糕。但我自己也有点问题，毕竟第一次面这种system design和technical communication这类的后面3/4/5轮，有点没经验导致的不自信。（recruiter给我的feedback也是这么说的）Anyways祝大家接下来面试好运，遇到好的面试官！
+All in all，体验特别特别一般。特别是second round，我觉得哪怕我一点都不准备让我去面试别人也不会像那个小哥哥一样糟糕。
+但我自己也有点问题，毕竟第一次面这种system design和technical communication这类的后面3/4/5轮，有点没经验导致的不自信。
+（recruiter给我的feedback也是这么说的）Anyways祝大家接下来面试好运，遇到好的面试官！
 还有一个信息，因为手里有offer我面试完就催了recruiter，她隔了一天就跟我说fail了，feedback很及时效率很高，挺professional的。
 
 # https://www.1point3acres.com/bbs/thread-845337-1-1.html
@@ -1234,7 +1329,11 @@ class D(object):
 
 88.
 第一轮，聊过去经验，口音看应该是个美国长大的烙印，聊得很行，feedback没问题。
-第二轮，三姐，就是432那道全1的题，头一天晚上特意看过，所以code写得很顺利，但是三姐不懂c++。问了一堆很傻的问题，比如往list里insert一个value，为什么不去连prev和next，我告诉她这已经builtin了。然后还要一行行的解释code干什么。我在写的时候已经解释过逻辑是什么样的了。最后相信列出了各种testcases。反馈是这轮struggled，真jb扯蛋，是三姐struggle understand c++ code吧。给recruiter回信中complain了这货。我面试fail了就算是有被黑也一般就算了，反正于事无补，这次觉得完全是放屁一样的feedback，必须说明一下。
+第二轮，三姐，就是432那道全1的题，头一天晚上特意看过，所以code写得很顺利，但是三姐不懂c++。
+问了一堆很傻的问题，比如往list里insert一个value，为什么不去连prev和next，
+我告诉她这已经builtin了。然后还要一行行的解释code干什么。我在写的时候已经解释过逻辑是什么样的了。
+最后相信列出了各种testcases。反馈是这轮struggled，真jb扯蛋，是三姐struggle understand c++ code吧。
+给recruiter回信中complain了这货。我面试fail了就算是有被黑也一般就算了，反正于事无补，这次觉得完全是放屁一样的feedback，必须说明一下。
 第三轮美国人设计rate limiter，没问题。
 第四轮印度老头craftsmanship，聊了不少，结果反馈不佳，这是没地说理去了。他怎么说就怎么是了吧。
 第五轮三哥，word ladder和insert interval，这人不错，最后聊了一会天。‍‍‌‍‌‍‌‌‌‌‌‌‌‍‍‌‌
@@ -1251,10 +1350,16 @@ infra track电面包含一些操作系统基础知识。What is virtual memory &
 电面 中国小姐姐 看起来很聪明的样子 给一个graph判断是不是 木又寸。
 
 第一轮系统设计 🇮🇳大哥 放上youtube教程链接
-第二轮concurrency 欧洲大哥 经典delay scheduler。这轮感觉像是开卷考试。之前自己尝试用Python模仿一个DelayQueue。但是因为实在没什么concurrency经验，实现过程中被抠了一个细节，不过整体上框架写出来了。
-第三轮coding ABC小哥+🇮🇳shadow大姐 出了一系列简单的题。基本都是十分钟说思路+秒。从简单双指针到DP到快慢指针到利口 而要，邀遛灵，而遛吴。ABC小哥长得挺帅，VO聊天背景还是塞尔达。
-第二天第一轮coding 🇮🇳大哥。李寇遛吴武。但是没有给每一层的推导公式。我在线推导公式但是没来得及推出来，只能写出BFS框架然后作罢。个人感觉现场推这个公式不是我的强项，暗示了大哥很多次，我说我知道这里面一定有一些relationship，能不能给点hint。大哥给的hint不知所云，有点尴尬。事后搜索这个题的题干，恍然大悟～
-第二天第二轮lunch talk 弯曲土著老爷爷。老爷爷说想问什么问什么，不局限于工作。我当时有点受够了模板问题，就跟大爷聊了一些弯曲的房价风云变幻/Linkedin的食堂等等问题。大爷说Oh I never expect that。还跟大爷聊了养狗/生娃当爸爸的焦虑等问题。整体来说聊的很开心，如果当时有lunch吃就更完美了
+第二轮concurrency 欧洲大哥 经典delay scheduler。这轮感觉像是开卷考试。之前自己尝试用Python模仿一个DelayQueue。
+但是因为实在没什么concurrency经验，实现过程中被抠了一个细节，不过整体上框架写出来了。
+第三轮coding ABC小哥+🇮🇳shadow大姐 出了一系列简单的题。基本都是十分钟说思路+秒。
+从简单双指针到DP到快慢指针到利口 而要，邀遛灵，而遛吴。ABC小哥长得挺帅，VO聊天背景还是塞尔达。
+第二天第一轮coding 🇮🇳大哥。李寇遛吴武。但是没有给每一层的推导公式。我在线推导公式但是没来得及推出来，
+只能写出BFS框架然后作罢。个人感觉现场推这个公式不是我的强项，暗示了大哥很多次，我说我知道这里面一定有一些relationship，
+能不能给点hint。大哥给的hint不知所云，有点尴尬。事后搜索这个题的题干，恍然大悟～
+第二天第二轮lunch talk 弯曲土著老爷爷。老爷爷说想问什么问什么，不局限于工作。我当时有点受够了模板问题，
+就跟大爷聊了一些弯曲的房价风云变幻/Linkedin的食堂等等问题。大爷说Oh I never expect that。
+还跟大爷聊了养狗/生娃当爸爸的焦虑等问题。整体来说聊的很开心，如果当时有lunch吃就更完美了
 第二天第三轮BQ 中国小姐姐manager。经典最challenge的project/怎么take feedback。随后小姐姐再次把第一轮system design的问题拿出来talk了一番（应该组里就是做这个的）。
 
 # https://www.1point3acres.com/bbs/thread-842768-1-1.html
@@ -1270,7 +1375,7 @@ infra track电面包含一些操作系统基础知识。What is virtual memory &
 
 
 
-
+"""
 
 
 

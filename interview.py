@@ -1,4 +1,11 @@
 """
+coding 1：耳散吴，而就其，思思就（最后一题没时间写只说了思路）
+coding 2：伊尔期
+SD：top k - 按油管上俄罗斯大叔的思路讲的
+讲项目，画白板 - 这一轮面试官说不需要讲太fancy的项目，主要是把他讲懂，类似knowledge transfer那种
+HM聊天：半‍‍‍‌‌‌‍‍‌‍‌‌‌‌‌‍‍‍小时BQ + 半小时product design，如果要实现一个easy apply，要考虑blabla
+
+
 第一轮manager 很常规的bq，还会复数我说的话，进行confirm
 第二轮 project dive，自己在白板说自己现在做的项目，面试官提问题交流，像做presentation
 第三轮 system design，设计calender

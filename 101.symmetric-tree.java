@@ -22,6 +22,18 @@
  */
 class Solution {
     public boolean isSymmetric(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        return symmetricHelper(root, root.left, root.right);
+    }
+
+
+    private boolean symmetricHelper(TreeNode node, TreeNode left, TreeNode right) {
+        if (node == null) {
+            return true;
+        }
+
         
     }
 }

@@ -50,15 +50,16 @@ public class allPalidrom {
         }
     }
 
-    HashMap<String, HashSet<String>> map = new HashMap<String, HashSet<String>>();
+    
 
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
         String s = "abac";
         HashSet<String> res = new HashSet<String>();
         res = Dfs(s, 0, s.length() - 1);
     }
 
-    public HashSet<String> Dfs(String s, int start, int end) {
+    public static HashSet<String> Dfs(String s, int start, int end) {
+        HashMap<String, HashSet<String>> map = new HashMap<String, HashSet<String>>();
         if (start > end) {
             return new HashSet<String>();
         }

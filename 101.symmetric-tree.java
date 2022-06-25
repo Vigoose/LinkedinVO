@@ -24,7 +24,7 @@ class Solution {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {
             return true;
-        }
+        } 
         return symmetricHelper(root, root.left, root.right);
     }
 
@@ -34,7 +34,16 @@ class Solution {
             return true;
         }
 
-        
+
+        if (left != null && right != null) {
+            return left.val == right.val;
+        }
+
+        return symmetricHelper(left, left.left, right.right) && symmetricHelper(right, left.right, right.left);
+
+
+
+
     }
 }
 // @lc code=end

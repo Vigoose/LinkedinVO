@@ -2,6 +2,8 @@
  * @lc app=leetcode id=432 lang=java
  *
  * [432] All O`one Data Structure
+ * 
+ * https://leetcode.com/problems/all-oone-data-structure/discuss/91383/An-accepted-JAVA-solution-detailed-explanation.
  */
 
 // @lc code=start

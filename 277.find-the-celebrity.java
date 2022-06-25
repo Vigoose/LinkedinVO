@@ -10,7 +10,23 @@
 
 public class Solution extends Relation {
     public int findCelebrity(int n) {
-        
+        int result = 0;
+
+        for (int i = 1; i < n; i++) {
+            if (!knows(i, result)) {
+                result = i;
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (i == result) continue;
+
+            if (knows(result, i) || !knows(i, result)) {
+                return -1;
+            }
+        }
+
+        return result;
     }
 }
 // @lc code=end

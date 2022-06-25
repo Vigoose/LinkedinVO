@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*
  * @lc app=leetcode id=381 lang=java
  *
@@ -7,20 +9,56 @@
 // @lc code=start
 class RandomizedCollection {
 
+    List<Integer> list;
+    HashMap<Integer, Set<Integer>> indexMap;
+    Random rd;
+
     public RandomizedCollection() {
-        
+        list = new ArrayList<>();
+        indexMap = new HashMap<>();
+        rd = new Random();
     }
-    
+
     public boolean insert(int val) {
-        
+        if (indexMap.containsKey(val)) {
+            indexMap.get(val).add(list.size());
+            list.add(val);
+            return false;
+        }
+        Set<Integer> indexList = new HashSet();
+        indexList.add(list.size());
+
+        indexMap.put(val, indexList);
+        list.add(val);
+        return true;
     }
-    
+
     public boolean remove(int val) {
+        if (!indexMap.containsKey(val)) {
+            return false;
+        }
+
+        Set<Integer> indexSet = indexMap.get(val);
+        int index = indexSet.iterator().next();
+        indexSet.remove(index);
+        if (indexSet.isEmpty()) {
+            indexMap.remove(val);
+        }
+
+        if (index != list.size() - 1) {
+            int LastVal = list.get(list.size() - 1);
+            Set<Integer> lastIndexSet = indexMap.get(LastVal);
+            lastIndexSet.remove(list.size() - 1);
+            lastIndexSet.add(index);
+            list.set(index, LastVal);
+        }
+        list.remove(list.size() - 1);
         
+        return true;
     }
     
     public int getRandom() {
-        
+        return list.get(rd.nextInt(list.size()));
     }
 }
 

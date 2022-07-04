@@ -44,6 +44,19 @@ class Solution {
         return result;
     }
 
+    /**
+     * 
+     * @param a
+     * @param b
+     * @return
+     * 
+     * 6,8
+     * 8,6
+     * 6,2
+     * 2,0
+     * 
+     */
+
     public int GCD(int a, int b) {
         if (b == 0) {
             return a;

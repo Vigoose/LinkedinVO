@@ -17,7 +17,6 @@ class Solution {
         }
 
         sum /= k;
-
         Arrays.sort(nums);
 
         return dfs(nums, k, sum, 0, nums.length - 1, new boolean[nums.length]);

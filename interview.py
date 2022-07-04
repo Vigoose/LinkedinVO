@@ -1,4 +1,64 @@
 """
+面经：     
+1. 珥糁雾 变种+🌂魃齡  
+2. 飔橵鸸 + 傘嵧鹨
+3. 反转索引查询
+4. 坚埪系统 （谐音）
+
+Giving back to the community. 4 rounds: 1 System design, 1 coding system design, 1 pure LC coding, 
+1 Manager/Behaviour round. All 4 rounds were 1 hour in duration.
+
+Round #1: System Design
+
+Q: LinkedIn users can share posts with each other and externally (outside of LinkedIn). 
+Design a system that tracks the top N shared posts by the following time-intervals; 1 minute, 1 hour, and 1 day.
+Get requirements, assumptions, constraints, etc.
+What is this system expected to do? Are all of the events generated for us? Are we only building the ingestion engine + DB for queries?
+What is the number of users/posts/activity?
+Do we care more about accuracy or speed of metrics?
+High-Level
+What does the events look like? How do we store it? How do we process it in the DB?
+Do we want pre-process before into DB? Or let aggregation engine perform the computation during query time?
+Low-Level
+Talked about all the tables in the DB
+Talked about how do we store the events in the DB.
+Talked about how will the aggregation engine query for these results
+Talked about the API calls that will access the DB
+Talked about the amount of read/write ratios
+Overall: Felt good, interviewer was satisfied with answers.
+Round #2: Coding System Design
+
+Q: https://leetcode.com/problems/all-oone-data-structure/
+I have not seen this question before. Literally spent 30+ minutes thinking of the designs in my head of how to do this.
+Ended up with a Bucket DLL to store the keys for the frequency.
+Also utilized a hashmap to keep track of bucket nodes that we currently have
+Overall: WTF, who asks this in an interview?? Felt good that I came to the solution on my own, but didn't get to finish 
+implementing all of the functionalities
+Round #3: Pure LC Coding
+
+Q: https://leetcode.com/problems/maximum-product-subarray/
+I did this question about 2 years ago, so when I saw it, I actually didn't even remember it. Didn't need hints, but took 
+awhile to get to the optimal solution
+Overall: Felt okay. Interviewer was satisfied, even though I took awhile.
+Round #4: Manager Interview
+
+Bunch of Tell me about a time....
+Good round, felt like we were laughing and just hitting it off. Really dived down into my projects and what I'm currently doing.
+Overall: Felt good, hopefully Manager felt the same.
+Overall: Some of the questions were just...so unrealistic to expect an interviewee to get in an hour (if you haven't seen it). 
+But overall decent experience.
+
+RESULTS: They've requested another coding round because of my 2nd round (coding system design).
+
+Round #5: Additional Pure LC Coding
+
+https://leetcode.com/problems/max-stack/
+https://leetcode.com/problems/nested-list-weight-sum/
+Overall: Felt great. I've seen the first problem before so I breezed through it. The second I haven't seen, but it was pretty 
+intuitive into what we needed to do.
+UPDATED RESULTS: PASSED AND GOT AN OFFER
+
+
 第一轮, 简历+BQ。面试官是一个华人大哥（看名字估计是ABC），华人姑娘的shadow。根据简历内容, 
 找简历上的工作项目扣开来一个个问, 问项目里面的遇到的问题, 相关解决方案. 如何安排自己的时间, 
 如何处理跟同事之间的conflict。因为楼主转码选手，基本没有什么值得说的有挑战性的项目，学的还主要都是后端，

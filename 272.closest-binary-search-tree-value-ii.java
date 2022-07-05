@@ -1,4 +1,4 @@
-import java.util.Stack;
+import java.util.*;
 
 /*
  * @lc app=leetcode id=272 lang=java
@@ -24,66 +24,48 @@ import java.util.Stack;
  */
 class Solution {
     public List<Integer> closestKValues(TreeNode root, double target, int k) {
-        Stack<Integer> suc = new Stack<>();
-        Stack<Integer> pre = new Stack<>();
-
-        pushToSuc(root, suc, target);
-        pushToPre(root, pre, target);
-
-        List<Integer> res = new ArrayList<>();
-
-        if (suc.isEmpty() && pre.isEmpty()) {
-            return res;
-        }
-
+        List<Integer> result = new ArrayList<>();
+        Deque<TreeNode> smaller = new ArrayDeque<>();
+        Deque<TreeNode> bigger = new ArrayDeque<>();
+        pushToSmaller(smaller, root, target);
+        pushToBigger(bigger, root, target);
+        
         while (k -- > 0) {
-            if (suc.isEmpty()) {
-                res.add(pre.pop());
-            } else if (pre.isEmpty()) {
-                res.add(suc.pop());
+            if (smaller.isEmpty() || !bigger.isEmpty() && target - smaller.peekLast().val > bigger.peekLast().val - target) {
+                TreeNode cur = bigger.pollLast();
+                result.add(cur.val);
+                pushToBigger(bigger, cur.right, target);
             } else {
-                double sucHead = Math.abs(target - suc.peek());
-                double preHead = Math.abs(target - pre.peek());
-                if (sucHead < preHead) {
-                    res.add(suc.pop());
-                } else {
-                    res.add(pre.pop());
-                }
+                TreeNode cur = smaller.pollLast();
+                result.add(cur.val);
+                pushToSmaller(smaller, cur.left, target);
             }
         }
-        return res;
+        
+        return result;
     }
-
-
-    private void pushToSuc(TreeNode root, Stack<Integer> suc, double target) {
-        if (root == null) {
-            return;
+    
+    
+    private void pushToSmaller(Deque<TreeNode> smaller, TreeNode root, double target) {
+        while (root != null) {
+            if (root.val <= target) {
+                smaller.offerLast(root);
+                root = root.right;
+            } else {
+                root = root.left;
+            }
         }
-
-        pushToSuc(root.left, suc, target);
-
-        if (root.val > target) {
-            return;
-        }
-
-        suc.push(root.val);
-        pushToSuc(root.right, suc, target);
     }
-
-
-    private void pushToPre(TreeNode root, Stack<Integer> pre, double target) {
-        if (root == null) {
-            return;
+    
+    private void pushToBigger(Deque<TreeNode> bigger, TreeNode root, double target) {
+        while (root != null) {
+            if (root.val > target) {
+                bigger.offerLast(root);
+                root = root.left;
+            } else {
+                root = root.right;
+            }
         }
-
-        pushToSuc(root.right, pre, target);
-
-        if (root.val <= target) {
-            return;
-        }
-
-        pre.push(root.val);
-        pushToSuc(root.left, pre, target);
     }
 }
 // @lc code=end

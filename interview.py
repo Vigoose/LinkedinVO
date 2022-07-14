@@ -16,9 +16,11 @@ Get requirements, assumptions, constraints, etc.
 What is this system expected to do? Are all of the events generated for us? Are we only building the ingestion engine + DB for queries?
 What is the number of users/posts/activity?
 Do we care more about accuracy or speed of metrics?
+
 High-Level
 What does the events look like? How do we store it? How do we process it in the DB?
 Do we want pre-process before into DB? Or let aggregation engine perform the computation during query time?
+
 Low-Level
 Talked about all the tables in the DB
 Talked about how do we store the events in the DB.
@@ -26,6 +28,7 @@ Talked about how will the aggregation engine query for these results
 Talked about the API calls that will access the DB
 Talked about the amount of read/write ratios
 Overall: Felt good, interviewer was satisfied with answers.
+
 Round #2: Coding System Design
 
 Q: https://leetcode.com/problems/all-oone-data-structure/
@@ -34,14 +37,14 @@ Ended up with a Bucket DLL to store the keys for the frequency.
 Also utilized a hashmap to keep track of bucket nodes that we currently have
 Overall: WTF, who asks this in an interview?? Felt good that I came to the solution on my own, but didn't get to finish 
 implementing all of the functionalities
-Round #3: Pure LC Coding
 
+Round #3: Pure LC Coding
 Q: https://leetcode.com/problems/maximum-product-subarray/
 I did this question about 2 years ago, so when I saw it, I actually didn't even remember it. Didn't need hints, but took 
 awhile to get to the optimal solution
 Overall: Felt okay. Interviewer was satisfied, even though I took awhile.
-Round #4: Manager Interview
 
+Round #4: Manager Interview
 Bunch of Tell me about a time....
 Good round, felt like we were laughing and just hitting it off. Really dived down into my projects and what I'm currently doing.
 Overall: Felt good, hopefully Manager felt the same.
@@ -83,7 +86,7 @@ UPDATED RESULTS: PASSED AND GOT AN OFFER
 第一题，刷题网凉白的的变体（题干是一个N*N的grid上，有几个区域着火了，直升机跑去丢灭火炸弹，丢一颗灭一块），
 需要按照着火的面积从大到小排序, 然后选择着火面积块中任意一个点的坐标作为着火点的代表, 输出直升机过去丢灭火炸弹的最少的次数，
 以及对应的位置。整体过程和思路还算顺畅，BFS找出一整块着火点和所有相邻坐标，生成一个（map_size, first_fire_location）的tuple，
-然后推入一个priority queue里面，再从大到小一个个推出去。 中间出了几个问题, 一开始题目理解错误（我以为丢灭火炸弹是像炸弹人游戏那样炸个十字。。。），
+然后推入一个priority queue里面，再从大到小一个个推出去。 中间出了几个问题, 一开始题目理解错误（我以为丢灭火炸弹是像炸弹人游戏那样炸个十字），
 浪费了些时间在讲自己的思路，面试官甚至没听出来问题，觉得我思路没问题，等我开始写代码了面试官才注意到这个问题，提示后我就改过来重新讲思路重新写。
 然后在算时间复杂度的时候, 第一次计算出了错（忘记把priority queue的时间复杂度给乘进去了）, 之后跟面试官引导重新计算后改正过来。最后题还是做出来了。但花了差不多45分钟。
 

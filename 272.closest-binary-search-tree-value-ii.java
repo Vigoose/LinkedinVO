@@ -29,7 +29,7 @@ class Solution {
         Deque<TreeNode> bigger = new ArrayDeque<>();
         pushToSmaller(smaller, root, target);
         pushToBigger(bigger, root, target);
-        
+
         while (k -- > 0) {
             if (smaller.isEmpty() || !bigger.isEmpty() && target - smaller.peekLast().val > bigger.peekLast().val - target) {
                 TreeNode cur = bigger.pollLast();
@@ -44,6 +44,16 @@ class Solution {
         
         return result;
     }
+
+    /**
+     * smaller: [2]
+     * bigger:  [4,3]
+     * 
+     * 
+     * @param smaller 
+     * @param root
+     * @param target
+     */
     
     
     private void pushToSmaller(Deque<TreeNode> smaller, TreeNode root, double target) {
